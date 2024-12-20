@@ -1,0 +1,80 @@
+:root {
+  --header-bg-color: #7E504D;
+  --pale-color: #FFF2EF;
+  --main-bg-color: #FACEC0;
+  --text-color: #595959;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--pale-color);
+  color: var(--text-color);
+}
+
+header {
+  background-color: var(--header-bg-color);
+  /* Primary color */
+  color: var(--pale-color);
+  padding: 1em;
+  text-align: center;
+  height: 100px;
+  /* Fixed height for the header */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.header-logo {
+  float: left;
+  margin-right: 1em;
+  height: 100%;
+}
+
+.header-menu {
+  display: flex;
+  gap: 1em;
+}
+
+.header-menu a {
+  color: var(--pale-color);
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.header-menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1em;
+  background-color: var(--main-bg-color);
+  display: flex;
+}
+
+main .column {
+  flex: 1;
+  padding: 1em;
+}
+
+.main-image {
+  width: 100%;
+}
+
+.title ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title li {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
