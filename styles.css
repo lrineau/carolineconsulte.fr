@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Calibri, sans-serif;
+  font-family: Montserrat, sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--pale-color);
@@ -22,15 +22,15 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  height: 100px; /* Fixed height for the column headers */
+  height: 8em;
 }
 
-body :first-child .column-header::after,
+body :nth-child(1) .column-header::after,
 body :nth-child(2) .column-header::before
 {
   content: "";
   display: block;
-  width: 2px;
+  width: 1px;
   height: 80%;
   background-color: var(--pale-color);
 }
@@ -42,19 +42,27 @@ body :nth-child(2) .column-header::before
   height: 100%;
 }
 
-header h1 {
+.site-title {
   flex: 1;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 2.5em;
-  margin: 0;
+  font-size: 300%;
 }
 
 .header-logo {
-  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 1em;
+  /* margin-right: 1em; */
+  height: 80%;
   display: flex;
   align-items: center;
+  font-family: "Sacramento", serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: bold;
+  line-height: 0.8;
 }
 
 .header-menu {
@@ -63,16 +71,16 @@ header h1 {
   gap: 2em;
   align-items: center;
   justify-content: center;
+  font-size: 200%;
 }
 
 .header-menu a {
   color: var(--pale-color);
   text-decoration: none;
-  font-size: 1.6em;
 }
 
 .header-menu a.active {
-  font-size: 1.8em;
+  font-size: 110%;
   font-weight: bold;
 }
 
@@ -100,9 +108,11 @@ body .column {
 }
 
 .title {
+  font-size: 100%;
   font-weight: bold;
 }
 
 article {
+  font-size: 175%;
   margin: 3em;
 }
