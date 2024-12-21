@@ -1,8 +1,24 @@
 <svg width="1527" height="847" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        xml:space="preserve" overflow="hidden">
-        <g transform="translate(-231 -922)">
-                <path d="M67.0523 536.494C-4.20338 425.855-67.6509 133.427 149.452 55.5722 366.555-22.2827 1162.57-18.92 1369.67 69.3649 1576.77 157.65 1537.12 486.514 1392.04 585.28 1246.95 684.045 690.081 620.722 499.18 661.956 308.279 703.191 264.289 840.399 246.632 832.688 232.584 820.288 314.517 703.134 284.587 653.769 254.658 604.403 138.308 647.133 67.0523 536.494Z"
-                        stroke="#C6A5A2" stroke-width="13.75" stroke-miterlimit="8" fill="none" fill-rule="evenodd"
-                        transform="matrix(-1 0 0 1 1751 929)" />
-        </g>
+  xml:space="preserve" overflow="hidden">
+  <g transform="translate(-231 -922)">
+    <path
+      d="M67.0523 536.494C-4.20338 425.855-67.6509 133.427 149.452 55.5722 366.555-22.2827 1162.57-18.92 1369.67 69.3649 1576.77 157.65 1537.12 486.514 1392.04 585.28 1246.95 684.045 690.081 620.722 499.18 661.956 308.279 703.191 264.289 840.399 246.632 832.688 232.584 820.288 314.517 703.134 284.587 653.769 254.658 604.403 138.308 647.133 67.0523 536.494Z"
+      stroke="#C6A5A2" stroke-width="13.75" stroke-miterlimit="8" stroke-linejoin="arcs" fill="none"
+      transform="matrix(-1 0 0 1 1751 929)" />
+  </g>
+  <metadata id="metadata">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
 </svg>
