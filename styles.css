@@ -14,22 +14,15 @@ body {
   color: var(--text-color);
 }
 
-header {
+.column-header {
   background-color: var(--header-bg-color);
   color: var(--pale-color);
   text-align: center;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-}
-
-.column-header {
   height: 100px; /* Fixed height for the column headers */
-  width: 100%; /* Full width for the column headers */
-  display: flex;
-  align-items: center;
 }
 
 body :first-child .column-header::after,
