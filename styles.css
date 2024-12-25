@@ -13,11 +13,10 @@ body {
   padding: 0;
   background-color: var(--pale-color);
   color: var(--text-color);
-  display: flex;
 }
 
-body .column {
-  flex: 1;
+.column {
+  width: 50%;
   padding: 0;
 }
 
@@ -25,24 +24,26 @@ body .column {
   width: 100%;
 }
 
-/* columns headers
-*/
+/* columns headers */
 
-.column-header {
+.header-banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 6em;
+  display: flex;
   background-color: var(--header-bg-color);
   color: var(--pale-color);
+}
+
+.column-header {
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  height: 6em;
-}
-
-.header-left {
-  display: flex;
   flex: 1;
-  align-items: center;
 }
 
 .header-logo {
@@ -63,8 +64,8 @@ body .column {
 }
 
 /* vertical bar between columns in the header */
-body :nth-child(1) .column-header::after,
-body :nth-child(2) .column-header::before {
+.header-banner :nth-child(1)::after,
+.header-banner :nth-child(2)::before {
   content: "";
   display: block;
   width: 1px;
@@ -72,8 +73,7 @@ body :nth-child(2) .column-header::before {
   background-color: var(--pale-color);
 }
 
-/* top menu, on the right
-*/
+/* top menu, on the right */
 .header-menu {
   display: flex;
   flex: 1;
@@ -97,8 +97,11 @@ body :nth-child(2) .column-header::before {
   text-decoration: underline;
 }
 
-/* main content
-*/
+.page {
+  display: flex;
+}
+
+/* main content */
 article {
   margin: 3em;
 }
