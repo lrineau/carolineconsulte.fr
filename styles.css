@@ -131,13 +131,23 @@ h2 {
   container-type: size;
   font-size: min(1em, 1.6cqi);
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bulle > .shape-content {
   top: 10%;
   left: 10%;
   width: 80%;
   height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+
+.filet > .shape-content {
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
 }
 
 .shaped > .shape-content > * {
