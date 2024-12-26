@@ -38,6 +38,7 @@ body {
 }
 
 .column-header {
+  width: 50%;
   text-align: center;
   display: flex;
   align-items: center;
@@ -106,7 +107,7 @@ article {
   margin: 3em;
 }
 
-.title {
+h2 {
   font-size: 100%;
   font-weight: bold;
 }
@@ -114,4 +115,45 @@ article {
 .title ul {
   list-style-type: none;
   padding: 0;
+}
+
+.shaped {
+  position: relative;
+  margin-block: 1em 1em;
+  display: block;
+}
+
+.shaped > .shape {
+  width: 100%;
+}
+
+.shaped > .shape-content {
+  container-type: size;
+  font-size: min(1em, 1.6cqi);
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shaped > .shape-content > * {
+  overflow: auto;
+}
+
+.quotes {
+  font-style: italic;
+}
+
+ul.quotes {
+  margin: 0;
+  padding: 0;
+}
+
+ul.quotes > li {
+  list-style: none;
+  text-align: center;
 }
