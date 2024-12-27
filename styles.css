@@ -18,6 +18,7 @@ body {
 .column {
   width: 50%;
   padding: 0;
+  border: 1px dashed blue;
 }
 
 .main-image {
@@ -100,16 +101,21 @@ body {
 
 .page {
   display: flex;
+  /* min-height: 100vh; */
 }
 
 /* main content */
-article {
+.column > .text {
   margin: 3em;
+}
+
+.margin {
+  margin: 1em;
 }
 
 h2 {
   font-size: 100%;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .title ul {
@@ -119,39 +125,36 @@ h2 {
 
 .shaped {
   position: relative;
-  margin-block: 1em 1em;
   display: block;
+  margin: 2em;
+  background-size: 100% 100%;
 }
 
-.shaped > .shape {
-  width: 100%;
+.filet {
+  background-image: url("media/Double_filet.svg");
+}
+
+.bubble {
+  background-image: url("media/Bulle.svg");
 }
 
 .shaped > .shape-content {
-  container-type: size;
-  font-size: min(1em, 1.6cqi);
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.bulle > .shape-content {
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 60%;
+  overflow: auto;
 }
 
 .filet > .shape-content {
-  top: 15%;
-  left: 10%;
-  width: 80%;
-  height: 70%;
+  font-size: 133%;
+  transform: scale(0.75) ;
+  transform-origin: 46% 50%;
 }
 
-.shaped > .shape-content > * {
-  overflow: auto;
+.bubble > .shape-content {
+  transform: scale(0.67) ;
+  font-size: 149%;
+  transform-origin: 50% 20%;
 }
 
 .quotes {
