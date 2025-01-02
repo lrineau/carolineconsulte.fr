@@ -5,7 +5,7 @@
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:cc="http://creativecommons.org/ns#"
   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <path d="M 0,100 C 0,20 20,0 100,0 20,0 0,-20 0,-100 0,-20 -20,0 -100,0 -20,0 0,20 0,100" fill="black" id="star_path" />
+  <path d="M 0,100 C 0,20 20,0 100,0 20,0 0,-20 0,-100 0,-20 -20,0 -100,0 -20,0 0,20 0,100" fill="#FACEC0" id="star_path" />
   <metadata id="metadata">
     <rdf:RDF>
       <cc:Work rdf:about="">

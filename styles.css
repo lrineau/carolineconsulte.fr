@@ -174,19 +174,45 @@ h2, .bigger {
   font-style: italic;
 }
 
+ul {
+  padding-inline-start: 1em;
+}
+
+ul li {
+  position: relative;
+  list-style-type: none;
+}
+
+:not(.title) > ul:not(.quotes) > li {
+  margin-bottom: 1ex;
+}
+
+:not(.title) > ul:not(.quotes) > li::before {
+  content: ' ';
+  background-image: url("media/star.svg");
+  display: inline-block;
+  position: absolute;
+  left: -1lh;
+  width: 1lh;
+  height: 1lh;
+  background-size: 1lh;
+  background-repeat: no-repeat;
+}
+
 ul.quotes {
   margin: 0;
   padding: 0;
-}
-
-li {
-  margin-bottom: 1ex;
 }
 
 ul.quotes > li {
   margin-bottom: 0;
   list-style: none;
   text-align: center;
+}
+
+ul.quote > li::before {
+  content: '';
+  background: none;
 }
 
 li > h3 {
