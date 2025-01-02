@@ -104,8 +104,21 @@ body {
   /* min-height: 100vh; */
 }
 
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* main content */
-.column > .text {
+.column > .text,
+.page   > .text {
   margin: 3em;
 }
 
@@ -113,7 +126,7 @@ body {
   margin: 1em;
 }
 
-h2 {
+h2, .bigger {
   font-size: 100%;
   font-weight: 900;
 }
@@ -166,7 +179,18 @@ ul.quotes {
   padding: 0;
 }
 
+li {
+  margin-bottom: 1ex;
+}
+
 ul.quotes > li {
+  margin-bottom: 0;
   list-style: none;
   text-align: center;
+}
+
+li > h3 {
+  display: inline;
+  font-weight: bold;
+  font-size: 100%;
 }
