@@ -7,6 +7,8 @@
   --header-height: 6em;
   --font: Montserrat;
   --bold: 900;
+
+  --DEBUG-border-width: 0px;
 }
 
 body {
@@ -22,7 +24,10 @@ body {
   width: 50%;
   padding: 0;
   margin: 0 auto 0;
-  --DEBUG-border: 1px dashed blue;
+
+  border-width: var(--DEBUG-border-width);
+  border-color: blue;
+  border-style: dashed;
 }
 
 .single-column {
@@ -112,7 +117,10 @@ body {
   display: flex;
   margin-top: 3em;
   margin-bottom: 3em;
-  /* min-height: 100vh; */
+
+  border-width: var(--DEBUG-border-width);
+  border-color: red;
+  border-style: dashed;
 }
 
 .anchor {
