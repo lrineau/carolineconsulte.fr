@@ -170,6 +170,10 @@ h2, .bigger {
   background-image: url("media/Bulle.svg");
 }
 
+.bubble-left {
+  background-image: url("media/Bulle.svg");
+}
+
 .shaped > .shape-content {
   display: flex;
   flex-direction: column;
@@ -183,7 +187,8 @@ h2, .bigger {
   transform-origin: 46% 50%;
 }
 
-.bubble > .shape-content {
+.bubble > .shape-content,
+.bubble-left > .shape-content {
   transform: scale(0.67) ;
   font-size: 149%;
   transform-origin: 50% 20%;
