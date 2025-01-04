@@ -5,10 +5,12 @@
   --color2: #C6A5A2;
   --text-color: #595959;
   --header-height: 6em;
+  --font: Montserrat;
+  --bold: 900;
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: var(--font, sans-serif);
   font-size: 160%;
   margin: 0;
   padding: 0;
@@ -67,7 +69,7 @@ body {
 .site-title {
   flex: 1;
   text-align: center;
-  font-weight: bold;
+  font-weight: var(--bold);
   text-transform: uppercase;
   font-size: 175%;
 }
@@ -99,7 +101,7 @@ body {
 
 .header-menu a.active {
   font-size: 125%;
-  font-weight: bold;
+  font-weight: var(--bold);
 }
 
 .header-menu a:hover {
@@ -145,7 +147,7 @@ body {
 
 h2, .bigger {
   font-size: 100%;
-  font-weight: 900;
+  font-weight: var(--bold);
 }
 
 .title ul {
@@ -234,13 +236,13 @@ ul.quote > li::before {
 
 li > h3 {
   display: inline;
-  font-weight: bold;
+  font-weight: var(--bold);
   font-size: 100%;
 }
 
 .url {
   font-family: "Space Mono", monospace;
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -255,4 +257,14 @@ li > h3 {
 .book-link:any-link {
   color: var(--text-color);
   text-decoration: none;
+}
+
+input, select, button, textarea {
+  background: var(--color1);
+  font-family: var(--font, sans-serif);
+  font-size: 100%;
+}
+
+label, button {
+  font-weight: var(--bold);
 }
