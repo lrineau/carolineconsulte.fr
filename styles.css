@@ -116,6 +116,7 @@ body {
 
 .page {
   display: flex;
+  align-items: center;
   margin-top: 3em;
   margin-bottom: 3em;
 
@@ -141,6 +142,7 @@ body {
 .horizontal {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
