@@ -81,8 +81,8 @@ body {
 }
 
 /* vertical bar between columns in the header */
-.header-banner :nth-child(1)::after,
-.header-banner :nth-child(2)::before {
+.header-banner > :nth-child(1)::after,
+.header-banner > :nth-child(2)::before {
   content: "";
   display: block;
   width: 1px;
