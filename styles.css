@@ -4,6 +4,7 @@
   --color1: #FACEC0;
   --color2: #C6A5A2;
   --text-color: #595959;
+  --header-height: 6em;
 }
 
 body {
@@ -15,10 +16,16 @@ body {
   color: var(--text-color);
 }
 
-.column {
+.column2 {
   width: 50%;
   padding: 0;
-  border: 1px dashed blue;
+  margin: 0 auto 0;
+  --DEBUG-border: 1px dashed blue;
+}
+
+.single-column {
+  width: 70%;
+  margin: 0 auto 0;
 }
 
 .main-image {
@@ -28,11 +35,11 @@ body {
 /* columns headers */
 
 .header-banner {
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
-  height: 6em;
+  height: var(--header-height);
   display: flex;
   background-color: var(--header-bg-color);
   color: var(--pale-color);
@@ -101,7 +108,17 @@ body {
 
 .page {
   display: flex;
+  margin-top: 3em;
+  margin-bottom: 3em;
   /* min-height: 100vh; */
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: calc(-1 * var(--header-height));
+  height: var(--header-height);
+  visibility: hidden;
 }
 
 .vertical {
@@ -117,7 +134,7 @@ body {
 }
 
 /* main content */
-.column > .text,
+.column2 > .text,
 .page   > .text {
   margin: 3em;
 }
@@ -219,4 +236,23 @@ li > h3 {
   display: inline;
   font-weight: bold;
   font-size: 100%;
+}
+
+.url {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  font-style: italic;
+}
+
+.p {
+  margin: 1em 0 1em;
+}
+
+.book-link:any-link {
+  color: var(--text-color);
+  text-decoration: none;
 }
