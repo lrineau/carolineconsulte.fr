@@ -276,10 +276,24 @@ li > h3 {
   text-decoration: none;
 }
 
+form > div {
+  margin: 1ex;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5ex;
+}
+
 input, select, button, textarea {
   background: var(--color1);
   font-family: var(--font, sans-serif);
-  font-size: 100%;
+  font-size: 150%;
+}
+
+input, select, textarea {
+  border: 0px;
 }
 
 label, button {
