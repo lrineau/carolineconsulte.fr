@@ -162,7 +162,7 @@ body {
 }
 
 /* responsive design */
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 60rem) {
   body {
     /* to debug when the viewport is narrower */
     background-color: var(--DEBUG-narrow-body-bg);
@@ -186,6 +186,10 @@ body {
     width: 100%;
   }
 
+  .main-image {
+    max-height: 15lh;
+  }
+
   .column2 {
     max-width: 45em;
     justify-content: center;
@@ -197,11 +201,8 @@ body {
 /* main content */
 .column2 > .text,
 .page > .text {
-  margin: 2.7em;
-}
-
-.margin {
-  margin: 1em;
+  margin-block: 1em;
+  margin-inline: 1.5em;
 }
 
 h2,
