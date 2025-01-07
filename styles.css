@@ -10,6 +10,8 @@
   --bold: 900;
 
   --DEBUG-border-width: 0px;
+  --DEBUG-narrow-body-bg: var(--pale-color);
+  ---DEBUG-narrow-body-bg: rgb(252, 254, 230);
 }
 
 html {
@@ -161,6 +163,11 @@ body {
 
 /* responsive design */
 @media screen and (max-width: 50rem) {
+  body {
+    /* to debug when the viewport is narrower */
+    background-color: var(--DEBUG-narrow-body-bg);
+  }
+
   #--header-menu-column {
     display: none;
   }
