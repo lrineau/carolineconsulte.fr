@@ -5,7 +5,7 @@
   --color2: #C6A5A2;
   --text-color: #595959;
   --header-height: 6em;
-  --base-font-size: 134%;
+  --base-font-size: 100%;
   --font: Montserrat;
   --bold: 900;
 
@@ -17,11 +17,13 @@ body {
   font-size: var(--base-font-size);
   margin: 0;
   padding: 0;
+  text-align: justify;
   background-color: var(--pale-color);
   color: var(--text-color);
 }
 
 .column2 {
+  display: flex;
   width: 50%;
   padding: 0;
   margin: 0 auto 0;
@@ -37,7 +39,11 @@ body {
 }
 
 .main-image {
-  width: 100%;
+  flex: 0;
+  max-height: 40em;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 0.5em;
 }
 
 /* columns headers */
@@ -115,10 +121,14 @@ body {
 }
 
 .page {
+  max-width: 90em;
+  height: auto;
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin-top: 3em;
   margin-bottom: 3em;
+  margin-inline: auto;
 
   border-width: var(--DEBUG-border-width);
   border-color: red;
