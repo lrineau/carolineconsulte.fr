@@ -414,3 +414,13 @@ button[type="submit"] {
 #envoyer {
   align-self: flex-end;
 }
+
+.column3 > .shaped {
+  margin: 0.5em;
+}
+
+.text > div {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
