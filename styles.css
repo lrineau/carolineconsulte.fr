@@ -1,5 +1,5 @@
 :root {
-  --header-bg-color: #7E504D;
+  --marron: #7E504D;
   --pale-color: #FFF2EF;
   --color1: #FACEC0;
   --color2: #C6A5A2;
@@ -67,7 +67,7 @@ body {
   width: 100%;
   height: var(--header-height);
   display: flex;
-  background-color: var(--header-bg-color);
+  background-color: var(--marron);
   color: var(--pale-color);
 }
 
@@ -330,6 +330,7 @@ li > h3 {
   text-decoration: none;
 }
 
+.align-button,
 form > div {
   margin: 1ex;
   display: flex;
@@ -342,6 +343,7 @@ label {
 
 input,
 select,
+.button,
 button,
 textarea {
   background: var(--color1);
@@ -357,6 +359,7 @@ textarea {
 }
 
 label,
+.button,
 button {
   font-weight: var(--bold);
 }
@@ -365,22 +368,32 @@ label {
   font-size: var(--form-label-font-size);
 }
 
+.button,
 button {
+    display: block;
+    text-decoration: none;
     color: var(--pale-color);
     background-color: var(--marron);
 
     border-width: 0.5em;
+    border-style: solid;
     border-color: rgba(0,0,0,0); /* transparent */
     border-radius: 50em;
 
-    padding: 0 1.5em;
+    padding: 0.5em 1.5em;
 }
 
+.button::before,
 button::before {
   content: ">";
   margin-right: 0.5em;
 }
 
+button[type="submit"] {
+  cursor: pointer;
+}
+
+.align-button > .button,
 #envoyer {
   align-self: flex-end;
 }
