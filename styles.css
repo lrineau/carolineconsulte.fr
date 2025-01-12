@@ -347,6 +347,7 @@ textarea {
   background: var(--color1);
   font-family: var(--font, sans-serif);
   font-size: var(--form-font-size);
+  border-radius: 0.5em;
 }
 
 input,
@@ -362,4 +363,24 @@ button {
 
 label {
   font-size: var(--form-label-font-size);
+}
+
+button {
+    color: var(--pale-color);
+    background-color: var(--marron);
+
+    border-width: 0.5em;
+    border-color: rgba(0,0,0,0); /* transparent */
+    border-radius: 50em;
+
+    padding: 0 1.5em;
+}
+
+button::before {
+  content: ">";
+  margin-right: 0.5em;
+}
+
+#envoyer {
+  align-self: flex-end;
 }
