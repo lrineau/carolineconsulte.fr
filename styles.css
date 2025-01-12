@@ -71,6 +71,11 @@ body {
   color: var(--pale-color);
 }
 
+.header-banner a {
+  color: var(--pale-color);
+  text-decoration: none;
+}
+
 .column-header {
   width: 50%;
   text-align: center;
@@ -112,15 +117,13 @@ body {
 .header-menu {
   display: flex;
   flex: 1;
-  gap: 2em;
   align-items: center;
   justify-content: center;
   font-size: var(--menu-font-size);
 }
 
-.header-menu a {
-  color: var(--pale-color);
-  text-decoration: none;
+.header-menu > * {
+  padding: 1em;
 }
 
 .header-menu a.active {
@@ -173,14 +176,6 @@ body {
   body {
     /* to debug when the viewport is narrower */
     background-color: var(--DEBUG-narrow-body-bg);
-  }
-
-  #--header-menu-column {
-    display: none;
-  }
-
-  #--header-logo-column::after {
-    display: none;
   }
 
   .page,
