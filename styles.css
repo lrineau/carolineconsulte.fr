@@ -44,7 +44,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: initial;
 }
 
-.column2 {
+.column2,
+.column3 {
   display: flex;
   width: 50%;
   padding: 0;
@@ -54,6 +55,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: blue;
   border-style: dashed;
 }
+
+.column3 {
+  width: 33%;
+}
+
 
 .single-column {
   width: 70%;
@@ -202,7 +208,8 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 15lh;
   }
 
-  .column2 {
+  .column2,
+  .column3 {
     max-width: 45em;
     justify-content: center;
     align-items: center;
@@ -319,7 +326,7 @@ ul.quote > li::before {
   background: none;
 }
 
-li > h3 {
+h3 {
   display: inline;
   font-weight: var(--bold);
   font-size: 100%;
