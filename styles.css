@@ -5,8 +5,15 @@
   --color2: #C6A5A2;
   --text-color: #595959;
   --header-height: 6em;
-  --base-font-size: 100%;
+
   --font: Montserrat;
+  --base-font-size: 100%;
+  --site-title-font-size: 175%;
+  --menu-font-size: 112%;
+  --menu-active-font-size: 125%;
+  --h2-font-size: 112%;
+  --form-font-size: 112%;
+  --form-label-font-size: 100%;
   --bold: 900;
 
   --DEBUG-border-width: 0px;
@@ -88,7 +95,7 @@ body {
   text-align: center;
   font-weight: var(--bold);
   text-transform: uppercase;
-  font-size: 175%;
+  font-size: var(--site-title-font-size);
 }
 
 /* vertical bar between columns in the header */
@@ -108,7 +115,7 @@ body {
   gap: 2em;
   align-items: center;
   justify-content: center;
-  font-size: 112%;
+  font-size: var(--menu-font-size);
 }
 
 .header-menu a {
@@ -117,7 +124,7 @@ body {
 }
 
 .header-menu a.active {
-  font-size: 125%;
+  font-size: var(--menu-active-font-size);
   font-weight: var(--bold);
 }
 
@@ -207,7 +214,7 @@ body {
 
 h2,
 .bigger {
-  font-size: 112%;
+  font-size: var(--h2-font-size);
   font-weight: var(--bold);
 }
 
@@ -249,6 +256,7 @@ h2,
 }
 
 .filet > .shape-content {
+  /* Use https://developer.mozilla.org/en-US/docs/Web/CSS/shape-outside to optimize the text flow */
   font-size: 133%;
   transform: scale(0.75);
   transform-origin: 46% 50%;
@@ -343,7 +351,7 @@ button,
 textarea {
   background: var(--color1);
   font-family: var(--font, sans-serif);
-  font-size: 150%;
+  font-size: var(--form-font-size);
 }
 
 input,
@@ -355,4 +363,8 @@ textarea {
 label,
 button {
   font-weight: var(--bold);
+}
+
+label {
+  font-size: var(--form-label-font-size);
 }
