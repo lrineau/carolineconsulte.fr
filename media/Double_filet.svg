@@ -1,1 +1,27 @@
-<svg width="1939" height="1220" xmlns="http://www.w3.org/2000/svg"><g stroke="#FACEC0" stroke-width="6.875" fill="none"><path d="M1695.26 124.935c255.91 155.293 282.56 766.995 29.83 921.415-252.73 154.41-1316.895 197.32-1546.2 5.08C-50.414 859.19-63.093 269 189.635 114.585 442.362-39.83 1439.35-30.358 1695.26 124.935Z"/><path d="M1729.36 161.935c255.78 155.295 282.42 766.995 29.83 921.415-252.6 154.41-1316.208 197.32-1545.392 5.08C-15.386 896.19-28.058 306 224.537 151.585 477.131-2.831 1473.59 6.642 1729.36 161.935Z"/></g></svg>
+<svg width="1939" height="1220"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:cc="http://creativecommons.org/ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <g transform="translate(-114 -711)">
+    <path d="M1809.26 835.935C2065.17 991.228 2091.82 1602.93 1839.09 1757.35 1586.36 1911.76 522.195 1954.67 292.89 1762.43 63.5855 1570.19 50.9071 980 303.635 825.585 556.362 671.17 1553.35 680.642 1809.26 835.935Z" stroke="#FACEC0" stroke-width="6.875" fill="none"/>
+    <path d="M1843.36 872.935C2099.14 1028.23 2125.78 1639.93 1873.19 1794.35 1620.59 1948.76 556.982 1991.67 327.798 1799.43 98.6139 1607.19 85.9423 1017 338.537 862.585 591.131 708.169 1587.59 717.642 1843.36 872.935Z" stroke="#FACEC0" stroke-width="6.875" fill="none"/>
+  </g>
+  <metadata id="metadata">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <cc:attributionName>Caroline Rineau</cc:attributionName>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/" />
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
